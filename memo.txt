@@ -1,0 +1,19 @@
+エクスプローラー移動
+
+C:\xampp\htdocs\test\Calculator
+
+XAMPP 立ち上げる
+
+cd ../../..
+start start apache_start.bat
+
+ディレクトリ移動
+cd htdocs/test/Calculator/
+
+
+XAMPP 停止
+cd ../../..
+start start apache_stop.bat
+
+
+
