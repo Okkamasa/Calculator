@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action='calculation.php' method='post'>
+        <p>計算機</p>
+        <input type="text" name ="FirstNum" value=<?=$FirstNum?>> 
+        <select name = 'ArithmeticOperators' value=<?=$ArithmeticOperators?>>
+        <!-- <option value="">演算子を選択してください</option> -->
+        <option value="+" <?php if ( $_POST['ArithmeticOperators'] === '+' ) { echo ' selected'; } ?>> + </option>
+        <option value="-" <?php if ( $_POST['ArithmeticOperators'] === '-' ) { echo ' selected'; } ?>> - </option>
+        <option value="×" <?php if ( $_POST['ArithmeticOperators'] === '×' ) { echo ' selected'; } ?>> × </option>
+        <option value="÷" <?php if ( $_POST['ArithmeticOperators'] === '÷' ) { echo ' selected'; } ?>> ÷ </option>
+        </select>
+        <input type="text" name ="SecondNum" value =<?=$SecondNum?>>
+        = 
+        <input type="text" name ="ResultNum" value= <?=$ResultNum?> >
+        <input type='submit' value="確認する" id='ResultBTN'>
+
+    </form>
+</body>
+</html>
